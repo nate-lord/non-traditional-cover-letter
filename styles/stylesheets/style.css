@@ -1,0 +1,456 @@
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/reset.scss */
+button {
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  overflow: visible;
+  padding: 0;
+  width: auto;
+  background: transparent;
+  font-size: 100%;
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+/* line 22, ../sass/reset.scss */
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+/* line 27, ../sass/reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 31, ../sass/reset.scss */
+ul,
+li {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: baseline;
+  z-index: 1;
+}
+
+@keyframes FLASH {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 23, ../sass/screen.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 28, ../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 36, ../sass/screen.scss */
+body {
+  overflow: hidden;
+  height: 100%;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+}
+/* line 42, ../sass/screen.scss */
+body.unpositioned {
+  opacity: 0;
+}
+
+/* line 47, ../sass/screen.scss */
+#test {
+  position: fixed;
+  z-index: 10;
+}
+
+/* line 52, ../sass/screen.scss */
+#navBtns {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+/* line 57, ../sass/screen.scss */
+#navBtns.startSlides #startSlides, #navBtns.prevSlide #prevSlide, #navBtns.nextSlide #nextSlide {
+  display: block;
+}
+/* line 63, ../sass/screen.scss */
+#navBtns.nextSlide.prevSlide #nextSlide {
+  margin-bottom: 10px;
+}
+/* line 67, ../sass/screen.scss */
+#navBtns button {
+  display: none;
+  position: relative;
+  float: left;
+  clear: both;
+  overflow: hidden;
+  width: 50px;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #000;
+}
+/* line 78, ../sass/screen.scss */
+#navBtns button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 27px;
+  background-color: #fff;
+  transform: translate(0, 0);
+  transition: transform 100ms;
+}
+/* line 93, ../sass/screen.scss */
+#navBtns button:hover span {
+  transform: translate(3px, 3px);
+}
+/* line 97, ../sass/screen.scss */
+#navBtns button:active span {
+  transform: translate(6px, 6px);
+}
+
+/* line 103, ../sass/screen.scss */
+#consoleWrap {
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  z-index: 1000;
+  /*
+  -webkit-box-shadow: 8px 8px 0 0 rgba( 0, 0, 0, 0.15 ) ;
+  -moz-box-shadow:    8px 8px 0 0 rgba( 0, 0, 0, 0.15 );
+  box-shadow:         8px 8px 0 0 rgba( 0, 0, 0, 0.15 );
+  */
+}
+/* line 114, ../sass/screen.scss */
+#consoleWrap:after, #consoleWrap:before {
+  content: '';
+  position: absolute;
+  background-repeat: repeat;
+  background-image: url("../../imgs/background-dots.svg");
+  opacity: 0.4;
+}
+/* line 123, ../sass/screen.scss */
+#consoleWrap:after {
+  width: 8px;
+  height: 100%;
+  right: -9px;
+  top: 9px;
+}
+/* line 130, ../sass/screen.scss */
+#consoleWrap:before {
+  width: calc( 100% - 8px );
+  height: 8px;
+  left: 9px;
+  bottom: -9px;
+}
+
+/* line 138, ../sass/screen.scss */
+.constrain {
+  position: relative;
+  padding-bottom: 70%;
+  height: 0;
+}
+
+/* line 144, ../sass/screen.scss */
+#console {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+/* line 153, ../sass/screen.scss */
+#consoleHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid #000;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+/* line 167, ../sass/screen.scss */
+#consoleHeader:hover {
+  cursor: move;
+}
+/* line 171, ../sass/screen.scss */
+#consoleHeader img {
+  position: relative;
+  width: 11px;
+  height: auto;
+  vertical-align: middle;
+  top: -1px;
+}
+/* line 179, ../sass/screen.scss */
+#consoleHeader .fakeButton {
+  position: relative;
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 4px 0 0 7px;
+  background-color: #000;
+}
+/* line 189, ../sass/screen.scss */
+#consoleHeader .fakeButton:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 10px;
+  height: 10px;
+  border: inherit;
+  border-radius: inherit;
+  background-color: #fff;
+}
+
+/* line 204, ../sass/screen.scss */
+#consoleBody {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.875);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  color: lime;
+  font-size: 14px;
+  line-height: 1.1;
+  overflow: hidden;
+  transition: background-color 300ms, color 300ms;
+}
+/* line 220, ../sass/screen.scss */
+#consoleBody:hover {
+  cursor: text;
+}
+/* line 224, ../sass/screen.scss */
+#consoleBody.bw {
+  background-color: rgba(255, 255, 255, 0.875);
+  color: #111;
+}
+
+/* line 230, ../sass/screen.scss */
+#consoleBody .flashingCursor > *:last-child:after {
+  content: '';
+  position: absolute;
+  margin-top: 1px;
+  background-color: lime;
+  width: 9px;
+  height: 15px;
+  vertical-align: baseline;
+  margin-left: 2px;
+  animation: FLASH 1000ms infinite;
+  transition: background-color 300ms;
+}
+
+/* line 244, ../sass/screen.scss */
+#consoleBody.bw .flashingCursor > *:last-child:after {
+  background-color: #111;
+}
+
+/* line 248, ../sass/screen.scss */
+#consoleBody pre {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0 5px 5px;
+}
+
+/* line 265, ../sass/screen.scss */
+#slides {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: transform 300ms;
+}
+
+/* line 274, ../sass/screen.scss */
+#slides .slide:first-child {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* line 281, ../sass/screen.scss */
+#slides.visible .slide {
+  opacity: 1;
+  transform: scale(1);
+  line-height: 1.25;
+  padding: 5px 15px 0 5px;
+}
+
+/* line 288, ../sass/screen.scss */
+#scrollBar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  z-index: 100000;
+}
+
+/* line 297, ../sass/screen.scss */
+#scrollHandle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 255, 0, 0.5);
+  border: 1px solid lime;
+  border-right-width: 0;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 75ms, transform 300ms, background-color 300ms, border-color 300ms;
+}
+/* line 312, ../sass/screen.scss */
+#scrollHandle.visible {
+  opacity: 1;
+}
+/* line 316, ../sass/screen.scss */
+.bw #scrollHandle {
+  background-color: #111;
+  border-color: #111;
+}
+
+/* line 322, ../sass/screen.scss */
+#progress {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+/* line 329, ../sass/screen.scss */
+#progress li {
+  position: relative;
+  width: 13px;
+  height: 8px;
+}
+/* line 334, ../sass/screen.scss */
+#progress li:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 1px;
+  background: #000;
+  transition: width 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275), height 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* line 348, ../sass/screen.scss */
+#progress li.completed:before {
+  width: 11px;
+  height: 6px;
+}

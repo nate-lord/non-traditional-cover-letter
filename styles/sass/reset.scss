@@ -1,0 +1,44 @@
+@import "compass/css3";
+
+button, {
+	margin: 0;
+	outline: 0;
+	-webkit-appearance: none;
+	@include background-clip(padding-box);
+	@include border-radius(0);
+	border: 0;
+	cursor: pointer;
+	overflow: visible;
+	padding: 0;
+	width: auto;
+	background: transparent;
+	font-size: 100%;
+	font: inherit;
+	text-align: left;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline-color: transparent;
+	outline-style: none;
+}
+
+ul {
+	list-style: none;
+}
+
+ul,
+li {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	vertical-align: baseline;
+	z-index: 1;
+}
